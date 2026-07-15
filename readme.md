@@ -1,5 +1,9 @@
 fan
 --------
+![radxa a7z](https://radxa.com/cubie/a7z/spec_radxa_cubie_a7z_01.webp)
+
+radxa a7z fan auto controller, let fan speed adjust to cpu temp automatically
+
 
 ## install
 
