@@ -1,0 +1,17 @@
+[Unit]
+Description=Fan Controller
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/fan -i 2 -p 60006 -n 200 -c 40:0,45:60,48:120,50:150,51:200,52:220,53:230,55:255
+Restart=always
+RestartSec=1
+StandardOutput=null
+StandardError=null
+
+# 默认就是 root
+User=root
+
+[Install]
+WantedBy=multi-user.target
